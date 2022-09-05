@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(76, 174, 212);
+    overflow: hidden;
+}
+
+nav {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 44px;
+    padding: 5px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    height: 74vh;
+    background-color: black;
+    color: white;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    margin: 8px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 9px;
+    background-image: url('/photos/background.jpg');
+    background-size: 130%;
+    background-repeat: no-repeat;
+}
+
+.songItemContainer {
+    position: relative;
+    left: 5%;
+    width: 25vw;
+}
+
+.songItemPlay {
+    position: relative;
+    right: 10%;
+}
+
+.bottom {
+    position: sticky;
+    height: 72px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+/* 
+.icons {
+    margin-top: 15px;
+} */
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+/* .songItemContainer{
+    margin-top: 74px;
+} */
+
+.songItem {
+    height: 32px;
+    display: flex;
+    background-color: #4f2806;
+    color: white;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    width: 42px;
+    margin: -50px;
+    border-radius: 15px;
+}
+
+.timestamp {
+    margin: 0 20px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    /* display: flex;
+    align-items: center */
+    position: absolute;
+    left: 2vw;
+}
+
+#masterSongName{
+    /* margin-left: 40px ;
+    margin-bottom: 30px; */
+}
+
+#gif{
+    margin-left: 50px;
+}
+
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+
+#masterSongName{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
