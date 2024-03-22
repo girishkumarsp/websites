@@ -1,8 +1,3 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
-
 function page3Animation() {
     var elemC = document.querySelector("#elem-container")
     var fixedImage = document.querySelector("#fixed-image")
@@ -108,7 +103,7 @@ menuAnimation()
 function loader() {
     var loader = document.querySelector("#loader")
     setTimeout(() => {
-        loader.style.top = "-100%";
+        loader.style.top = "-100vh";
     }, 4000);
 }
 loader()
